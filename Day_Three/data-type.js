@@ -1,0 +1,1 @@
+console.log("Variables are containers for storing information")

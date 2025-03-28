@@ -10,8 +10,16 @@ console.log(findGrater);
 
 // find total sum of ages of users
 let ageSum = 0;
-const totalSum = arr.filter((item) => {
-  return (ageSum += item.age);
+const totalSum = arr.forEach((item) => {
+  ageSum += item.age;
 });
 
-console.log(totalSum);
+console.log(ageSum);
+
+const addSurname = arr.map((person) => ({
+  ...person,
+  Name: person.name + " Rai",
+}));
+console.log(addSurname);
+
+// Q.4 return only names starting with r, and declare him the winner, by adding new key winner as true

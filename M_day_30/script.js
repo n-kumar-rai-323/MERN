@@ -12,3 +12,15 @@ console.log(laps);
 
 laps.pop();
 console.log(laps);
+
+const results = {
+  2023: [23, 12, 32],
+  2024: [42, 54, 43],
+  2025: [0, 0, 0],
+};
+
+const { 2023: socres2023, 2024: socres2024, 2025: socres2025 } = results;
+const bigData = Math.max(...socres2023, ...socres2024, ...socres2025);
+console.log(bigData);
+
+console.log([...socres2023, ...socres2024]);

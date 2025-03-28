@@ -23,10 +23,42 @@ function buyChocolate(price, chocolate, required) {
 
 console.log(buyChocolate(10, "Dairy Milk", 3));
 
-function calMe() {
-  return "hi";
-}
+// function calMe() {
+//   return "hi";
+// }
 
-const calMe = () => {
-  "Hi";
-};
+// const calMe = () => {
+// //   "Hi";
+// // };
+
+// calculate sum of odd number
+arr = [2, 3, 4, 5, 6, 7, 7, 89, 8, 9];
+
+arr.forEach((item) => {
+  if (item % 2 == 0) {
+    console.log("odd number ");
+  } else {
+    console.log("even number ");
+  }
+});
+
+// calculate the sum of Number
+giveArr = [4, 3, 2, 1];
+sumNumber = 0;
+const output = giveArr.forEach((item) => {
+  sumNumber += item;
+});
+console.log(sumNumber);
+
+// filter out non integers : expected output : [3,5,6,1]
+const data = [3, "a", 5.5, 6, 1, "hello", 2.3, 5];
+const nonInteger = giveArr.filter((item) => {
+  return Number.isInteger(item);
+});
+
+console.log(nonInteger);
+// in the filtered result, multiply each number by 5 using Map
+const multiplyByFive = giveArr.map((item) => {
+  return item * 5;
+});
+console.log(multiplyByFive);
